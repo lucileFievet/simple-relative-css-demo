@@ -15,7 +15,7 @@ export default {
   }
 }
 </script>
-<!-- works fine -->
+<!-- doesn't works -->
 <style lang="scss" src="./App.scss">
 @import './assets/vars/colors.scss'
 </style>

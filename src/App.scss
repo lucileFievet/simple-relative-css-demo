@@ -1,5 +1,7 @@
+// works any way
 @import './assets/vars/size.scss';
-
+// doesn't work inside scss because of @import from node_modules
+// @import './assets/vars/colors.scss'
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
