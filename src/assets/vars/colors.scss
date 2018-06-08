@@ -1,8 +1,8 @@
 // Import Bulma's core
-@import "../../../node_modules/bulma/sass/utilities/_all";
+@import "~bulma/sass/utilities/_all";
 
 /** dark gray */
-$dark: darken($secondary,30%);
+$dark: darken(gray,30%);
 $dark-invert: findColorInvert($dark);
 /** main tonic : aquamarine --> success */
 $primary: #29c3bb;
@@ -27,16 +27,8 @@ $black: black;
 $light: #f5f5f5;
 $light-invert: findColorInvert($light);
 
-$waiting: #2c384b;
-$waiting-invert: #29b3ad;
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: (
-  "dominant": ($dominant, $white),
-  "secondary": ($secondary, $secondary-invert),
-  "yellow": ($yellow, $yellow-invert),
-  "lime": ($lime, $lime-invert),
-  "magenta": ($magenta, $magenta-invert),
-  "nirvana": ($nirvana, $nirvana-invert),
   "white": ($white, $black),
   "black": ($black, $white),
   "light": ($light, $light-invert),
@@ -46,7 +38,6 @@ $colors: (
   "success": ($success, $success-invert),
   "warning": ($warning, $warning-invert),
   "danger": ($danger, $white),
-  "waiting": ($waiting, $white)
 );
 
 // Links
@@ -55,5 +46,5 @@ $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
 // Import Bulma and Buefy styles
-@import "../../../node_modules/bulma";
-@import "../../../node_modules/buefy/src/scss/buefy";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
