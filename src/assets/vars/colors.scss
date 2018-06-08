@@ -1,4 +1,59 @@
-// works fine if called from style html tag
-// @import "../../../node_modules/bulma/sass/utilities/_all";
-// @import "../../../node_modules/bulma";
+// Import Bulma's core
+@import "../../../node_modules/bulma/sass/utilities/_all";
+
+/** dark gray */
+$dark: darken($secondary,30%);
+$dark-invert: findColorInvert($dark);
+/** main tonic : aquamarine --> success */
+$primary: #29c3bb;
+$primary-invert: findColorInvert($primary);
+/** main tonic info-color : turquoise --> info */
+$info: #3398cc;
+$info-invert: findColorInvert($info);
+/** tonic green (form) --> success */
+$success: #00af15;
+$success-invert: findColorInvert($success);
+/** tonic orange (form )--> warning */
+$warning: #f89a1e;
+$warning-invert: findColorInvert($warning);
+/** tonic red (form) --> danger */
+$danger: #ed1c24;
+$danger-invert: findColorInvert($danger);
+
+/** Set your colors */
+$white: white;
+$black: black;
+/** smoke (background swot & brain storm content) */
+$light: #f5f5f5;
+$light-invert: findColorInvert($light);
+
+$waiting: #2c384b;
+$waiting-invert: #29b3ad;
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "dominant": ($dominant, $white),
+  "secondary": ($secondary, $secondary-invert),
+  "yellow": ($yellow, $yellow-invert),
+  "lime": ($lime, $lime-invert),
+  "magenta": ($magenta, $magenta-invert),
+  "nirvana": ($nirvana, $nirvana-invert),
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $white),
+  "primary": ($primary, $white),
+  "info": ($info, $white),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $white),
+  "waiting": ($waiting, $white)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "../../../node_modules/bulma";
 @import "../../../node_modules/buefy/src/scss/buefy";
